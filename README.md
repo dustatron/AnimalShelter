@@ -1,15 +1,14 @@
 # CatBoardInterface
 ### By **Dusty McCord**  April 3rd 2020
 
-ASP.NET core MVC application to display views that interact with the CatBoardApi application.
+ASP.NET core API application to track and display animals in an animal shelter.
 
 ## Specifications user stories:
 
-* As a user, I want to be able to GET all messages related to a specific group.
-* As a user, I want to be able to POST messages to a specific group.
-* As a user, I want to be able to see a list of all groups.
-* As a user, I want to input date parameters and retrieve only messages posted during that timeframe.
-* As a user, I want to be able to PUT and DELETE messages, but only if I wrote them. (Start by requiring a user_name param to match the user_name of the author on the message. You can always try authentication later.)
+* As a user, I want to be able to GET a list of all animals in the shelter.
+* As a user, I want to be able to POST a new animal to the shelter Database.
+* As a user, I want to be able to Get details of a specific animal.
+* As a user, I want to be able to PUT and DELETE Animal entries in the database.
 
 ## API End Points
 ```
@@ -20,10 +19,13 @@ PUT /api/Animals/{AnimalId}
 DELETE /api/Animals/{AnimalId}
 ```
 
+## Setup/Installation Requirements
+_Make sure you have these tools installed on your computer:_
+*  [Git version control](https://git-scm.com/downloads)
+*  [MySql](https://azure.microsoft.com/en-us/free/mysql/)
+*  [Microsoft .Net Core 2.2](https://docs.microsoft.com/en-us/dotnet/framework/install/)
+*  [.Net Script](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
-## Getting Started
-
-Download the .zip file and extract all files into directory of your choice OR clone the repository to a directory. Open project directory in preferred text editor.
 
 ### Prerequisites
 
@@ -31,24 +33,32 @@ Download the .zip file and extract all files into directory of your choice OR cl
 2. Text Editor (Visual Studio Code)
 
 ### Installing
+_In your terminal_
 
-1. Clone the repository:
-    ```
-    git clone https://github.com/KeturahDev/CatBoardApi.git
-    ```
+* Clone the project from GitHub by typing:
+```sh
+git clone  https://github.com/dustatron/AnimalShelter
+```
 
-2. Restore all dependencies:
-    ```
-    dotnet restore
-    ```
+* Navigate to the project folder by typing:
+```sh
+cd AnimalShelter/ApiAnimalShelter
+```
+* Restore the project with this terminal command:
+```sh
+dotnet restore
+```
 
-### Open program
+Build the database by entering the command:
+```sh
+dotnet ef database update
+```
 
-3. Compile and Run code:
-    ```
-    dotnet build
-    dotnet run
-    ```
+Run the program by typing:
+```sh
+dotnet run
+```
+
 
 
 
@@ -57,8 +67,12 @@ Download the .zip file and extract all files into directory of your choice OR cl
 * C#
 * ASP.NET core MVC 2.2
 * RestSharp API
+* Entity Framework
 * Newtonsoft.Json
+* MySqlConnector
+* Razer
 * Git
+* Nswag
 
 
 ## Known Bugs
