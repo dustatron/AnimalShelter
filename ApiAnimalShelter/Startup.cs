@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using ApiAnimalShelter.Models;
 
 namespace ApiAnimalShelter
 {
@@ -25,7 +29,11 @@ namespace ApiAnimalShelter
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+      services.AddDbContext<AnimalShelterContext>(opt =>
+          opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
       services.AddSwaggerDocument(config =>
       {
         config.PostProcess = document =>
