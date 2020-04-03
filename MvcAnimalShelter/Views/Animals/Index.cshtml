@@ -1,16 +1,16 @@
-<h1>All Animals:</h1>
 
-<ol>
-@foreach (Animal animal in Model)
-{
-    <ul>
-        <li>ID: @animal.AnimalId</li>
-        <li>Name: @animal.Name</li>
-        @* <li>Species: @animal.Species</li> *@
-        <li>Age: @animal.Age</li>
-        @* <li>Gender: @animal.Gender</li> *@
-    </ul>
-    <a href="/Animals/Details/@(animal.AnimalId)"><p>View Details</p></a>
-    <br>
-}
-</ol>
+<ul class="collection with-header">
+  <li class="collection-header"><h4>All Animals</h4></li>
+  @foreach (Animal animal in Model)
+  {
+    <li class="collection-item  avatar">
+      <i class="material-icons circle">pets</i>
+      <span class="title">@animal.Name</span>
+        <span class="age">Age: @animal.Age <span>  || 
+         Type: @animal.Type
+        </span>
+ 
+      <a href="/Animals/Details/@(animal.AnimalId)" class="secondary-content" ><button class="waves-effect waves-light btn">View Details</button></a>
+    </li>
+  }
+</ul>

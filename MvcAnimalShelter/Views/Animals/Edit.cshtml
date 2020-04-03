@@ -27,8 +27,7 @@
         @Html.LabelFor(model => model.Comment)
         @Html.EditorFor(model => model.Comment,new { htmlAttributes = new {@class="form-control"}})
       </div>
-        <input type="submit" value="Save" class="btn btn-info btn-block"/>
+        <button type="submit" value="Save" class="btn-floating btn-large waves-effect waves-light red "> <i class="material-icons">add</i></button>
     }
-    <p>@Html.ActionLink("Back to Books", "Index")</p>
-  </div>
+   </div>
 </div>

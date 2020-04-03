@@ -1,0 +1,18 @@
+.title {
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.age {
+  padding: 1rem;
+}
+
+.animal-name {
+  font-size: 31px;
+  letter-spacing: .82px;
+  line-height: 27px;
+}
+
+.pad-med {
+  padding: 50px;
+}
