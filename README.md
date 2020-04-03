@@ -19,6 +19,10 @@ PUT /api/Animals/{AnimalId}
 DELETE /api/Animals/{AnimalId}
 ```
 
+## Further Explorations include
+* installed swagger with Nswg 
+* [Versioned API](https://neelbhatt.com/2018/04/21/api-versioning-in-net-core/)
+
 ## Setup/Installation Requirements
 _Make sure you have these tools installed on your computer:_
 *  [Git version control](https://git-scm.com/downloads)
@@ -58,8 +62,10 @@ Run the program by typing:
 ```sh
 dotnet run
 ```
-
-
+View Endpoint by entering the follow address in your browser:
+```sh
+http://localhost:5000/swagger
+```
 
 
 ## Technologies Used

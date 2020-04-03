@@ -34,6 +34,13 @@ namespace ApiAnimalShelter
 
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+      services.AddApiVersioning(o =>
+      {
+        o.ReportApiVersions = true;
+        o.AssumeDefaultVersionWhenUnspecified = true;
+        o.DefaultApiVersion = new ApiVersion(1, 0);
+      });
+
       services.AddSwaggerDocument(config =>
       {
         config.PostProcess = document =>
