@@ -1,0 +1,24 @@
+<h1>Details</h1>
+
+<div>
+  @Model.Name
+</div>
+
+<div>
+  @Model.Age
+</div>
+
+<div>
+  @Model.Type
+</div>
+
+<div>
+  @Model.Img
+</div>
+
+<div>
+  @Model.Comment
+</div>
+
+@Html.ActionLink("Edit Details", "Edit", new {id = Model.AnimalId})
+@Html.ActionLink("Delete Animal", "Delete", new {id = Model.AnimalId})

@@ -1,0 +1,36 @@
+@model MvcAnimalShelter.Models.Animal;
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <h1 class="text-center">Add An Animal</h1>
+    @using (Html.BeginForm())
+    {
+      <div class="form-group">
+        <p>Animal Name</p>
+        @Html.TextBoxFor(model => model.Name, new {@class="form-control"})
+      </div>
+
+      <div class="form-group">
+        <p>Age</p>
+        @Html.TextBoxFor(model => model.Age, new {@class="form-control"})
+      </div>
+
+      <div class="form-group">
+        <p>Type of animal</p>
+        @Html.TextBoxFor(model => model.Type, new {@class="form-control"})
+      </div>
+
+      <div class="form-group">
+        <p>Image link</p>
+        @Html.TextBoxFor(model => model.Img, new {@class="form-control"})
+      </div>
+
+      <div class="form-group">
+        <p>Comments</p>
+        @Html.TextBoxFor(model => model.Comment, new {@class="form-control"})
+      </div>
+
+      <button type="submit" class="btn btn-info btn-block"> Add </button>
+    }
+  </div>
+</div>
