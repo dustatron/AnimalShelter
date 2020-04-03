@@ -1,4 +1,5 @@
-using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace ApiAnimalShelter.Models
