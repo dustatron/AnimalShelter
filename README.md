@@ -11,6 +11,15 @@ ASP.NET core MVC application to display views that interact with the CatBoardApi
 * As a user, I want to input date parameters and retrieve only messages posted during that timeframe.
 * As a user, I want to be able to PUT and DELETE messages, but only if I wrote them. (Start by requiring a user_name param to match the user_name of the author on the message. You can always try authentication later.)
 
+## API End Points
+```
+GET /api/Animals
+POST /api/Animals
+GET /api/Animals/{AnimalId}
+PUT /api/Animals/{AnimalId}
+DELETE /api/Animals/{AnimalId}
+```
+
 
 ## Getting Started
 
@@ -57,13 +66,11 @@ Currently there's no known bugs.
 
 ## Contact Info 
 Currently there's no known bugs, however, if there are any issues running this website I would love feedback! Please email us at 
-* keturah.dev@gmail.com.
-* jamisoncozart@gmail.com
-* 
+* DustyMcCord@gmail.com.
 
 
 ## License
 
 Licensed under the MIT license.
 
-&copy; 2020 Keturah Howard, Jamison Cozart, Dusty McCord.
+&copy; 2020 Dusty McCord.
