@@ -62,6 +62,18 @@ Run the program by typing:
 ```sh
 dotnet run
 ```
+Navigate to the MVC project
+```sh
+cd ../MvcAnimalShelter
+```
+Run the MVC project to see the front end by typing:
+```sh
+dotnet run
+``` 
+View MVC project by going to this address in your browser:
+```sh
+http://localhost:5010/
+```
 View Endpoint by entering the follow address in your browser:
 ```sh
 http://localhost:5000/swagger
@@ -79,6 +91,7 @@ http://localhost:5000/swagger
 * Razer
 * Git
 * Nswag
+* [Materializecss](https://materializecss.com/)
 
 
 ## Known Bugs
